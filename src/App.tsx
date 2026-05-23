@@ -98,10 +98,10 @@ export default function App() {
             <div className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-mono font-medium tracking-wide shadow-xs border ${
               isSupabaseLive 
                 ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
-                : 'bg-amber-500/10 text-amber-400 border-amber-500/20'
+                : 'bg-rose-500/10 text-rose-400 border-rose-500/20'
             }`}>
-              {isSupabaseLive ? <CheckCircle size={11} className="text-emerald-400" /> : <Database size={11} className="text-amber-400" />}
-              <span>{isSupabaseLive ? 'SUPABASE CLOUD LIVE' : 'OFFLINE MODE (LOCAL STORAGE)'}</span>
+              {isSupabaseLive ? <CheckCircle size={11} className="text-emerald-400" /> : <Database size={11} className="text-rose-400" />}
+              <span>{isSupabaseLive ? 'SUPABASE CLOUD LIVE' : 'SUPABASE NOT CONFIGURED'}</span>
             </div>
 
             {/* View selectors */}

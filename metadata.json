@@ -1,0 +1,6 @@
+{
+  "name": "School Registration and Class Management System",
+  "description": "Production-ready, highly scalable registration, verification, classes assignment and analytics system for Chercher Secondary School built with Supabase and Cloudinary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

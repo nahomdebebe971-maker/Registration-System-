@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_compat = true
+
+# Redirect rules to proxy API requests to Netlify serverless functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# Fallback index rewrite to support React client-side routing on reload
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
